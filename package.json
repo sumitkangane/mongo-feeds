@@ -1,0 +1,21 @@
+{
+    "name": "easy-feeds",
+    "version": "1.0.0",
+    "description": "Sample RestAPI Application using nodejs and mongodb",
+    "private": true,
+    "scripts": {
+    "start": "node ./bin/www"
+    },
+    "author": "SK",
+    "license": "MIT", 
+    "dependencies": {
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "ejs": "~2.5.5",
+    "express": "~4.14.1",
+    "mongoose": "^4.8.4",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.2"
+    }
+}

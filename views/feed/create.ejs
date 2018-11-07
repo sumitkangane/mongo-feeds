@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Feed</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+  
+      <center><h3><a href="/feed"> <button type="submit">Feed List</button></a></h3></center>
+      <h1>Create New Feed</h1>
+      <form action="/feed/save" method="post">
+        <table>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+              <td>Description</td>
+              <td><textarea name="description"></textarea></td>
+            </tr>
+            <tr>
+              <td>Link</td>
+              <td><input type="text" name="link" /></td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td><input type="number" name="price" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"><button type="submit">Save</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

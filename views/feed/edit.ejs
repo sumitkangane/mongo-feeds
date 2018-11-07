@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Feed</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <h3><a href="/feed">Feed List</a></h3>
+      <h1>Edit Feed</h1>
+      <form action="/feed/update/<%= feed._id%>" method="post">
+        <table>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td><input type="text" name="name" value="<%= feed.name %>" placeholder="Enter name" /></td>
+            </tr>
+            <tr>
+              <td>Description</td>
+              <td><textarea name="description"><%= feed.description %></textarea></td>
+            </tr>
+            <tr>
+              <td>Link</td>
+              <td><input type="text" name="link" value="<%= feed.link %>" /></td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td><input type="number" name="price" value="<%= feed.price %>" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"><button type="submit" class="button button4">Update</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feed List</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+     
+      
+      <h1>Feed List</h1>
+      <% if(feed.length>0) { %>
+      <table class="list-table">
+        <thead>
+          <tr>
+            <th>Feed Name</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+
+          <% for(var i=0; i<feed.length;i++) { %>
+            <tr>
+              <td><a href="/feed/show/<%= feed[i]._id%>"><%= feed[i].name%></a></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+      <% } else { %>
+        <center><div>No feed found.</div></center>
+      <% } %>
+    <center><h3><a href="/feed/create"><button type="submit" class="button button4">Create Feed</button></a></h3></center>
+    </div>
+  </body>
+</html>
